@@ -1,0 +1,124 @@
+body {
+    margin:0;
+    padding:0;
+    font-size:0.9em;
+    color:#333333;
+    font-family:"游ゴシック","Noto Sana JP",sans-serif;
+    background-color: #f6f2c8;
+}
+ul,ol {
+    list-style: none;
+    padding: 0;
+}
+a:hover {
+    opacity: 0.6;
+}
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    background-color: #290e08;
+    height: 60px;
+}
+.header_title_area {
+    font-family:'Teko',sans-serif;
+    color: #ffffff;
+    line-height: 60px;
+    font-size: 1.8rem;
+}
+.header_title_area>span{
+    font-size: xx-small;
+    margin-left: 1.5em;
+}
+.header_access_text {
+    width: 230px;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 4px;
+}
+.header_access_text p {
+    margin: 0;
+}
+.header_phone_num {
+    font-size: 1.85rem;
+    font-family: 'Passion One', cursive;
+}
+/*ここからメイン*/
+.main_visual_area{
+    text-align: left;
+    background-color: #e6c912;
+    position: relative;
+    width: 1000px;
+    height: 600px;
+    margin: 0 auto;
+    padding: 0;
+    }
+.main_ttl_wrapper{
+    position: absolute;
+    width:40%;
+    top: 160px;
+    left: 5%;
+}
+.main_ttl_text{
+    font-size: xx-large;
+    letter-spacing: 0.2em;
+}
+.main_ttl_slogan{
+    font-size: large;
+    margin-top: 50px;
+    letter-spacing: 0.2em;
+}
+
+.main_ttl_neqes{
+    font-size: 110px;
+    margin-top:30px;
+    animation-name: fadeIn;
+    animation-duration: 4s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    transform: translateY(50px);
+    opacity: 0;
+}
+@keyframes fadeIn {
+0% {
+}
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.main_ttl_neqes>span{
+    color: red;
+}
+.image_above{
+    width: 1000px;
+    height: 80%;
+    position: absolute;
+    top: 80px;
+    left: 20%;
+}
+/*ここからナビ*/
+.global_navi{
+    background-color: #346435;
+    padding: 6px;
+}
+.navi_items_wrapper{
+    display: flex;
+}
+.global_navi a{
+    display: block;
+    width: 250px;
+    height: 48px;
+    line-height: 48px;
+    border-radius: 10px;
+    background-color: #1e320a;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+}
